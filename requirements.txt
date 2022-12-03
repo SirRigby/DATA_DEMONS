@@ -1,0 +1,15 @@
+streamlit
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+plotly
+PIL
+joblib
+os
+datetime
+sklearn
+xgboost==1.6.2
+SMOTE
+ExtraTreesClassifier
