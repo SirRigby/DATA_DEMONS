@@ -1,15 +1,2 @@
 streamlit
-pandas
-numpy
-scipy
-matplotlib
-seaborn
-plotly
-PIL
-joblib
-os
-datetime
-scikit-learn
-xgboost
-SMOTE
-pickle
+requests
