@@ -9,7 +9,7 @@ PIL
 joblib
 os
 datetime
-scikit learn
-xgboost==1.6.2
+scikit-learn
+xgboost
 SMOTE
 ExtraTreesClassifier
