@@ -12,5 +12,4 @@ datetime
 scikit-learn
 xgboost
 SMOTE
-ExtraTreesClassifier
 pickle
