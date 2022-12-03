@@ -12,7 +12,7 @@ from PIL import Image
 @st.cache(allow_output_mutation=True)
 
 def retrieving_data():
-    df = pd.read_csv('D:/appp/raw_data.csv',parse_dates=['Date', 'Time'])
+    df = pd.read_csv('raw_data.csv',parse_dates=['Date', 'Time'])
     #df.drop(columns=['Unnamed: 0', 'Location_Easting_OSGR', 'Location_Northing_OSGR', 'Local_Authority_(Highway)', 'LSOA_of_Accident_Location'], inplace=True)
     return df
 
@@ -145,5 +145,5 @@ def eda_app():
             X.corrwith(df['Accident_Severity']).plot(kind='barh',title="Correlation with 'Convert' column -")
             st.pyplot(fig)
         with st.expander('Confusion Matrix'):
-            image = Image.open('D:/appp/confusion_matrix.png')
+            image = Image.open('confusion_matrix.png')
             st.image(image)
