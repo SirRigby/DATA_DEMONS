@@ -23,7 +23,7 @@ def load_model(model_file):
 
 def ml_app():
     st.subheader("Machine Learning Section")
-    loaded_model=load_model("D:/appp/modelxgbnew.pkl")
+    loaded_model=load_model("modelxgbnew.pkl")
     col1,col2=st.columns(2)
     with col1:
         latitude = st.number_input("Latitude",step=1e-6,format="%.6f")
@@ -38,7 +38,7 @@ def ml_app():
         prediction = loaded_model.predict(sample)
         st.success('Predicted accident severity: '+str(prediction[0]+1))
         pred_prob = loaded_model.predict_proba(sample)
-        image = Image.open('D:/appp/Classification_Report.png')
+        image = Image.open('Classification_Report.png')
         st.image(image,caption='Classification Report')
       #  st.write("  Accuracy :"+str(prob*100)+'%'+str(probb*100)+'%')
         
