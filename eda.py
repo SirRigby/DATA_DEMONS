@@ -43,7 +43,7 @@ def eda_app():
         with st.expander("Data Types Summary"):
             st.dataframe(df.dtypes)
         with st.expander("Descriptive Summary"):
-            st.dataframe(df.describe(include=np.object))
+            #st.dataframe(df.describe(include=np.object))
             st.dataframe(df.describe(include=np.number))
     else:
         df=retrieve2(df)
