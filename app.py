@@ -5,7 +5,7 @@ from eda import eda_app
 from ml import ml_app
 
 def main():
-    st.title("KNIT HACK 1.0")
+    st.title("Mini Project")
     st.header("Accident Severity Predictor")
     menu=["Home","EDA","Predictor","About"]
     choice=st.sidebar.selectbox("Menu",menu)
@@ -13,7 +13,7 @@ def main():
         st.write("")
         st.write('\n \n \n')
         st.subheader("Submission by")
-        st.subheader(" >>>> DATA_DEMONS <<<<")
+       # st.subheader(" >>>> DATA_DEMONS <<<<")
         st.write("#### _**Brief Description**_")
         st.markdown("""
                - 1. Loading the Dataset using Pandas Module as a dataframe for pre-processing
@@ -85,7 +85,7 @@ def main():
         ml_app()
     else:
         st.subheader("About")
-        st.write("- Piyush Kumar (Project Lead)")
+        st.write("- Piyush Kumar")
         st.write("Information Technology, sophomore")
         st.write("- Raj Chaudhary") 
         st.write("Information Technology, sophomore")
