@@ -5,7 +5,7 @@ from eda import eda_app
 from ml import ml_app
 
 def main():
-    st.title("Mini Project")
+    st.title("Project")
     st.header("Accident Severity Predictor")
     menu=["Home","EDA","Predictor","About"]
     choice=st.sidebar.selectbox("Menu",menu)
