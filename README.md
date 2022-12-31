@@ -1,3 +1,3 @@
 # DATA_DEMONS
-Submission for KNIT Hack 1.0
+Mini Project
 main file: app.py
